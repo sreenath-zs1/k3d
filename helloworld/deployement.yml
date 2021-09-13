@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: devops-toolki
+  name: hello
   labels:
-    app: devops-toolkit
+    app: hello
 spec:
   selector:
     matchLabels:
-      app: devops-toolkit
+      app: hello
   template:
     metadata:
       labels:
-        app: devops-toolkit
+        app: hello
     spec:
-      containers:
-        - name: devops-toolkit
-          image: sreenathkk96/hello
-          ports:
-            - containerPort: 80
+     containers:
+      - name: hello
+        image: sreenathkk96/hello
+        ports:
+        - containerPort: 80
