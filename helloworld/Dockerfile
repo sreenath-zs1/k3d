@@ -1,2 +1,5 @@
-FROM     nginx
-COPY     index.html /usr/share/nginx/html
+FROM    nginx
+WORKDIR /usr/share/nginx/html
+RUN     rm index.html
+COPY    index.html .
+CMD     ["nginx", "-g", "daemon off;"]
