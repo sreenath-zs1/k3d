@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: devops-toolkit
-          image: sree/helloworld
+          image: sreenathkk96/hello
           ports:
             - containerPort: 80
